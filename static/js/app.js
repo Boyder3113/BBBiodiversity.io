@@ -15,5 +15,30 @@ function makePlots(id) {
 
        console.log(`OTU Labels: ${outLabels}`)
 
+       var trace1 = {
+           x: sampleValues,
+           y: plotID,
+           text: labels,
+           marker: {
+           color: 'blue'},
+           type: "bar",
+           orientation: "h",
+       };
+
+       var data = [trace1];
+
+       var layout = {
+           title: "Top 10 OTU's per Individual",
+           yaxis:{
+               tickmode:"linear",
+           },
+           margin: {
+               l: 100,
+               r: 100,
+               t: 100,
+               b: 30
+           }
+       };
+
    })
 }
