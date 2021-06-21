@@ -7,5 +7,13 @@ function makePlots(id) {
        console.log(sampleValues)
        var otuLabels = sampledata.samples[0].otu_labels.slice(0,10);
        console.log(otuLabels)
+
+       var top10 = (sampledata.samples[0].otu_ids.slice(0,10)).reverse();
+       
+       var plotID = top10.map(d => "OTU " + d);
+       console.log(`OTU IDS: ${plotID}`)
+
+       console.log(`OTU Labels: ${outLabels}`)
+
    })
 }
