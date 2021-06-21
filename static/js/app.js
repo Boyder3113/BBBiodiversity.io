@@ -40,5 +40,7 @@ function makePlots(id) {
            }
        };
 
+    Plotly.newPlot("bar", data, layout);
+
    })
 }
