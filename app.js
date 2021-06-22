@@ -3,31 +3,36 @@ function makePlots(id) {
        console.log(sampledata)
        var otuIds = sampledata.samples[0].otu_ids;
        console.log(otuIds)
-       var SampleValues = sampledata.samples[0].sample_values.slice(0,10).reverse();
-       console.log(sampleValues)
-       var otuLabels = sampledata.samples[0].otu_labels.slice(0,10);
-       console.log(otuLabels)
+       var sampleValuesBar = sampledata.samples[0].sample_values.slice(0,10).reverse();
+       console.log(sampleValuesBar)
+       var otuLabelsBar = sampledata.samples[0].otu_labels.slice(0,10);
+       console.log(otuLabelsBar)
+       var sampleValuesBub = sampledata.samples[0].sample_values;
+       console.log(sampleValuesBub)
+       var otuLabelsBub = sampledata.samples[0].otu_labels;
+       console.log(otuLabelsBub)
+
 
        var top10 = (sampledata.samples[0].otu_ids.slice(0,10)).reverse();
        
        var plotID = top10.map(d => "OTU " + d);
        console.log(`OTU IDS: ${plotID}`)
 
-       console.log(`OTU Labels: ${outLabels}`)
+       console.log(`OTU Labels: ${otuLabelsBar}`)
 
        var trace1 = {
-           x: sampleValues,
+           x: sampleValuesBar,
            y: plotID,
-           text: labels,
+           text: otuLabelsBar,
            marker: {
            color: 'blue'},
            type: "bar",
            orientation: "h",
        };
 
-       var data = [trace1];
+       var barData = [trace1];
 
-       var layout = {
+       var barLayout = {
            title: "Top 10 OTU's per Individual",
            yaxis:{
                tickmode:"linear",
@@ -40,9 +45,6 @@ function makePlots(id) {
            }
        };
 
-    Plotly.newPlot("bar", data, layout);
+    Plotly.newPlot("bar", barData, barLayout);
 
-   })
-}
-
-makePlots(40)
+    
