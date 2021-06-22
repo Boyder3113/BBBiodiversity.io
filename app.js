@@ -47,4 +47,27 @@ function makePlots(id) {
 
     Plotly.newPlot("bar", barData, barLayout);
 
+    var trace2 ={
+        x: otuIds,
+        y: sampleValuesBub,
+        mode: "markers",
+        marker: {
+            size: sampleValuesBub,
+            color: otuIds
+        },
+        text: otuLabelsBub
+    };
     
+    var bubLayout = {
+        xaxis:{title: "OTU ID"},
+        height: "500",
+        width: "1200"
+    };
+    
+    var bubData = [trace2];
+    
+    Plotly.newPlot("bubble", bubData, bubLayout)
+    });
+}
+
+makePlots();
