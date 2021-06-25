@@ -92,5 +92,23 @@ function demoInfo(id) {
     function optionChanged(id) {
         makePlots(id);
         demoIngo(id);
+    }
+
+    function popDashboard() {
+
+        var dropDownMenu = d3.select("#selDataset");
+        
+        d3.json("samples.json").then((data)=> {
+            console.log(data)
+        
+            data.names.forEach(function(name) {
+                dropDownMenu.append("option").text(name).property("value");
+            });
+        
+            makePlots(data.names[0]);
+            demoInfo(data.names[0]);
+        });
         }
+        
+    popDashboard();
 
