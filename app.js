@@ -70,4 +70,27 @@ function makePlots(id) {
     });
 }
 
-makePlots();
+function demoInfo(id) {
+
+    d3.json("samples.json").then((data)=> {
+        var demoData = data.metadata;
+        console.log(demoData)
+    
+        var getId = demoData.filter(meta => meta.id.toString() === id)[0];
+    
+        var demographicInfo = d3.select("#sample-metadata");
+    
+        demographicInfo.html("");
+    
+        Object.entries(getId).forEach((key)=> {
+            demographicInfo.append("h5").text(key[0].toUpperCase() + ": " + key[1] + "\n");
+        });
+    });
+    
+    }
+
+    function optionChanged(id) {
+        makePlots(id);
+        demoIngo(id);
+        }
+
