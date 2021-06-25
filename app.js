@@ -89,26 +89,26 @@ function demoInfo(id) {
     
     }
 
-    function optionChanged(id) {
-        makePlots(id);
-        demoIngo(id);
-    }
+function optionChanged(id) {
+    makePlots(id);
+    demoInfo(id);
+}
 
-    function popDashboard() {
+function popDashboard() {
 
-        var dropDownMenu = d3.select("#selDataset");
+    var dropDownMenu = d3.select("#selDataset");
         
-        d3.json("samples.json").then((data)=> {
-            console.log(data)
+    d3.json("samples.json").then((data)=> {
+        console.log(data)
         
-            data.names.forEach(function(name) {
-                dropDownMenu.append("option").text(name).property("value");
-            });
-        
-            makePlots(data.names[0]);
-            demoInfo(data.names[0]);
+        data.names.forEach(function(name) {
+            dropDownMenu.append("option").text(name).property("value");
         });
-        }
         
-    popDashboard();
+        makePlots(data.names[0]);
+        demoInfo(data.names[0]);
+    });
+    }
+        
+popDashboard();
 
