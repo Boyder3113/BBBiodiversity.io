@@ -8,7 +8,7 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-    <li><a href="#built-with">Project Screenshots</a></li>
+    <li><a href="#project-screenshots">Project Screenshots</a></li>
     <li><a href="#built-with">Built With</a></li>
   </ol>
 </details>
@@ -23,9 +23,12 @@ This repository breaks down a study of belly button biodiversity!
 Use your terminal to create a local host website that visualizes the microbs present in human navels. Change the ID number to see an updated bar chart for the top 10 microbs, a bubble chart breakdown of all microbs, and a table displaying the demographic info of the individual linked to the chosen ID number!
 
 <!-- Project Screenshots -->
+## Project Screenshots
+
 * Biodiversity Dashboard
 
   ![image](https://raw.githubusercontent.com/Boyder3113/BBBiodiversity.io/main/Images/BBDashboard.PNG)
+  
   * Dropdown Menu
 
   ![image](https://github.com/Boyder3113/BBBiodiversity.io/blob/main/Images/BBDropdown.PNG?raw=true)
