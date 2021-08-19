@@ -94,7 +94,7 @@ function optionChanged(id) {
     demoInfo(id);
 }
 
-function popDashboard() {
+function popDashboard(id) {
 
     var dropDownMenu = d3.select("#selDataset");
         
