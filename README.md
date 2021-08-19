@@ -22,8 +22,8 @@ This repository breaks down a study of belly button biodiversity!
 Use your terminal to create a local host website that visualizes the microbs present in human navels. Change the ID number to see an updated bar chart for the top 10 microbs, a bubble chart breakdown of all microbs, and a table displaying the demographic info of the individual linked to the chosen ID number!
 
 <!-- Project Screenshots -->
-
-  ![image](https://boyder3113.github.io/BBBiodiversity.io/)
+* Biodiversity Dashboard
+  ![image](https://drive.google.com/file/d/1Rp5Msqtv6C4O-TwNQ1gT3InLAhwBuHfr/view?usp=sharing)
 
 <!-- BUILT WITH -->
 ## Built With
