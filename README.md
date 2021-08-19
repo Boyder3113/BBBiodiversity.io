@@ -23,7 +23,7 @@ Use your terminal to create a local host website that visualizes the microbs pre
 
 <!-- Project Screenshots -->
 * Biodiversity Dashboard
-  ![image](https://drive.google.com/file/d/1Rp5Msqtv6C4O-TwNQ1gT3InLAhwBuHfr/view?usp=sharing)
+  ![image](https://drive.google.com/file/d/1Rp5Msqtv6C4O-TwNQ1gT3InLAhwBuHfr)
 
 <!-- BUILT WITH -->
 ## Built With
